@@ -1,0 +1,17 @@
+@name=Download File Scenarios
+
+# GET request to download a file for user1
+GET http://127.0.0.1:5000/download/yourfile.txt?user=user1
+
+###
+# GET request to download a file for user2
+GET http://127.0.0.1:5000/download/yourfile.txt?user=user2
+
+###
+# GET request to download a non-existent file
+GET http://127.0.0.1:5000/download/nonexistent.txt?user=user1
+
+
+###
+# GET request to download a file without specifying user (Unauthorized Access)
+GET http://127.0.0.1:5000/download/yourfile.txt

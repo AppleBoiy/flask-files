@@ -1,0 +1,5 @@
+### Root request
+GET http://localhost:5000
+
+### Ping
+GET http://localhost:5000/ping
